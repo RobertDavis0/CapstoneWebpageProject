@@ -1,28 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
 
+#navbar  {
+    top: 0;
+    left: 0;
+    position: sticky; 
+    background-color: lightyellow !important;
+}
+
+body{
+    background-image: url(Printing_Picture.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: lightyellow;
+}
 
 h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 700;
+    text-align: center;
     font-size: 70px;
-    text-align: center;
-}
-h2 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
 }
 
 div {
-    font-family: 'Montserrat Alternates', sans-serif;
+
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+    z-index: 5;
 }
 
-button {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+#animation {
+    animation-name: TeeSpin;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
 }
+
+
+
+
+@keyframes TeeSpin {
+     10% {
+      transform: rotate(36deg);
+      font-size: 60px;
+      color: antiquewhite;
+    }
+
+     20% {
+      transform: rotate(72deg);
+      font-size: 90px;
+      color: antiquewhite;
+    }
+
+     30% {
+      transform: rotate(108deg);
+      font-size: 120px;
+      color: azure;
+    }
+
+     40% {
+      transform: rotate(144deg);
+      font-size: 150px;
+      color: azure;
+    }
+
+     50% {
+      transform: rotate(180deg);
+      font-size: 180px;
+      color: lightblue;
+    }
+
+     60% {
+      transform: rotate(216deg);
+      font-size: 210px;
+      color: lightblue;
+    }
+    
+    70% {
+     transform: rotate(252deg);
+     font-size: 240px;
+     color: aqua;
+   }
+
+    80% {
+     transform: rotate(288deg);
+     font-size: 270px;
+     color: darkblue;
+   }
+
+    90% {
+     transform: rotate(324deg);
+     font-size: 300px;
+     color: darkblue;
+   }
+
+    100% {
+     transform: rotate(360deg);
+     font-size: 330px;
+   }
+} 
+
