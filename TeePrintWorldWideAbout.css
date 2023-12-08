@@ -10,20 +10,24 @@
 body{
     background-image: url(Printing_Picture.jpeg);
     background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: 'Montserrat Alternates', sans-serif;
-    color: lightyellow !important;
+    color: lightyellow;
 }
 
 h1 {
     font-weight: 700;
     text-align: center;
     font-size: 70px;
+}
+
+div {
+
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    z-index: 5;
 }
 
 #border {
